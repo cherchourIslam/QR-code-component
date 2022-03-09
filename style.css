@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Outfit";
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 23%;
+    height: 75%;
+    padding-top: 1em;
+    border-radius: 1em;
+}
+.card .card-icon {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card .card-icon img {
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.card .card-content {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+.card .card-content h2{
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    width: 74%;
+    margin: 1em;
+    font-size: 1.2em;
+    text-indent: 0.5em;
+}
+.card .card-content p{
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    font-size: 0.9em;
+    width: 74%;
+    text-indent: 0.5em;
+}
+
+@media screen and (max-width: 375px) {
+    
+ 
+      .card {   
+        width: 82%;
+      }
+  
+  }
